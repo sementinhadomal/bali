@@ -256,41 +256,49 @@ h1, h2, h3, h4, .font-serif {
   align-items: center;
   justify-content: center;
   padding: 120px 20px 80px;
-  background: linear-gradient(to bottom, rgba(11, 19, 14, 0.4), rgba(11, 19, 14, 0.95)), 
-              url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(11, 19, 14, 0.72), rgba(11, 19, 14, 0.92)), 
+              url('/assets/hero-villa.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(4px);
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .hero-content {
   max-width: 900px;
   text-align: center;
   z-index: 2;
-}
-
-.hero-badge {
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--gold-light);
+  position: relative;
+  background: rgba(11, 19, 14, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--border-gold);
-  padding: 6px 18px;
-  border-radius: 30px;
-  margin-bottom: 24px;
-  background: rgba(18, 26, 21, 0.6);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title {
-  font-size: 52px;
+  font-size: 50px;
   line-height: 1.15;
   margin-bottom: 20px;
-  color: #FFF;
+  color: #FFFFFF;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .hero-subtitle {
   font-size: 18px;
-  color: var(--text-muted);
+  color: #E2E8E4;
   max-width: 720px;
   margin: 0 auto 36px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-actions {
