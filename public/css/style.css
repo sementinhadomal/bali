@@ -255,20 +255,10 @@ h1, h2, h3, h4, .font-serif {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 80px;
-  background: linear-gradient(to bottom, rgba(11, 19, 14, 0.72), rgba(11, 19, 14, 0.92)), 
-              url('/assets/hero-villa.jpg') center/cover no-repeat;
+  padding: 140px 20px 80px;
+  background: linear-gradient(to bottom, rgba(11, 19, 14, 0.35) 0%, rgba(11, 19, 14, 0.45) 60%, rgba(11, 19, 14, 0.98) 100%), 
+              url('/assets/gallery-aerial-sunset.jpg') center/cover no-repeat;
   overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  filter: blur(4px);
-  transform: scale(1.05);
-  z-index: 1;
 }
 
 .hero-content {
@@ -276,29 +266,40 @@ h1, h2, h3, h4, .font-serif {
   text-align: center;
   z-index: 2;
   position: relative;
-  background: rgba(11, 19, 14, 0.55);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 40px 30px;
-  border-radius: var(--radius-lg);
+  padding: 30px 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-light);
   border: 1px solid var(--border-gold);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  padding: 8px 22px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  background: rgba(11, 19, 14, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 52px;
   line-height: 1.15;
   margin-bottom: 20px;
   color: #FFFFFF;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 4px rgba(0,0,0,0.8);
 }
 
 .hero-subtitle {
-  font-size: 18px;
-  color: #E2E8E4;
-  max-width: 720px;
+  font-size: 19px;
+  color: #F0F4F1;
+  max-width: 760px;
   margin: 0 auto 36px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.95);
+  font-weight: 500;
 }
 
 .hero-actions {
