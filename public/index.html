@@ -32,8 +32,8 @@
 
     <ul class="nav-links">
       <li><a href="#overview" data-i18n="nav_overview">Overview</a></li>
-      <li><a href="#amenities" data-i18n="nav_amenities">Amenities</a></li>
       <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+      <li><a href="#amenities" data-i18n="nav_amenities">Amenities</a></li>
       <li><a href="#availability" data-i18n="nav_availability">Availability</a></li>
       <li><a href="#location" data-i18n="nav_location">Location</a></li>
       <li><a href="#instagram" data-i18n="nav_instagram">Instagram</a></li>
@@ -122,6 +122,50 @@
     </div>
   </section>
 
+  <!-- GALLERY SECTION -->
+  <section class="section" id="gallery">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="gallery_title">Explore The Villa</h2>
+      <p class="section-subtitle" data-i18n="gallery_subtitle">A visual tour of paradise.</p>
+    </div>
+
+    <div class="gallery-tabs">
+      <button class="tab-btn active" data-filter="all" data-i18n="gallery_tab_all">All Photos</button>
+      <button class="tab-btn" data-filter="pool" data-i18n="gallery_tab_pool">Pool & Garden</button>
+      <button class="tab-btn" data-filter="rooms" data-i18n="gallery_tab_rooms">Bedrooms & Suites</button>
+      <button class="tab-btn" data-filter="living" data-i18n="gallery_tab_living">Living & Dining</button>
+    </div>
+
+    <div class="gallery-slider-container" style="position: relative;">
+      <button class="gallery-nav-btn prev-btn" onclick="scrollGallery(-1)" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item rooms">
+          <img src="/assets/gallery-bedroom.jpg" alt="Master King Suite">
+          <div class="gallery-overlay"><div class="gallery-caption">Master Suite & Garden Sauna</div></div>
+        </div>
+        <div class="gallery-item pool">
+          <img src="/assets/gallery-pool-deck.jpg" alt="Private Pool Deck">
+          <div class="gallery-overlay"><div class="gallery-caption">Private Plunge Pool & Deck at Dusk</div></div>
+        </div>
+        <div class="gallery-item living">
+          <img src="/assets/gallery-living-room.jpg" alt="Living Lounge Bar">
+          <div class="gallery-overlay"><div class="gallery-caption">Open Lounge & Kitchen Bar</div></div>
+        </div>
+        <div class="gallery-item pool">
+          <img src="/assets/gallery-aerial-sunset.jpg" alt="Rice Field View">
+          <div class="gallery-overlay"><div class="gallery-caption">Rice Terrace Sunset View</div></div>
+        </div>
+        <div class="gallery-item living">
+          <img src="/assets/gallery-aerial-top.jpg" alt="Villa Aerial View">
+          <div class="gallery-overlay"><div class="gallery-caption">Nyaman Lima Twin Villa Aerial View</div></div>
+        </div>
+      </div>
+
+      <button class="gallery-nav-btn next-btn" onclick="scrollGallery(1)" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
   <!-- AMENITIES & FEATURES -->
   <section class="section" id="amenities">
     <div class="section-header">
@@ -165,50 +209,6 @@
         <h3 class="feature-title">Private Driver & Scooter Rental</h3>
         <p class="feature-desc">Explore Bali comfortably with our dedicated private driver or premium scooter hires.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- GALLERY SECTION -->
-  <section class="section" id="gallery">
-    <div class="section-header">
-      <h2 class="section-title" data-i18n="gallery_title">Explore The Villa</h2>
-      <p class="section-subtitle" data-i18n="gallery_subtitle">A visual tour of paradise.</p>
-    </div>
-
-    <div class="gallery-tabs">
-      <button class="tab-btn active" data-filter="all" data-i18n="gallery_tab_all">All Photos</button>
-      <button class="tab-btn" data-filter="pool" data-i18n="gallery_tab_pool">Pool & Garden</button>
-      <button class="tab-btn" data-filter="rooms" data-i18n="gallery_tab_rooms">Bedrooms & Suites</button>
-      <button class="tab-btn" data-filter="living" data-i18n="gallery_tab_living">Living & Dining</button>
-    </div>
-
-    <div class="gallery-slider-container" style="position: relative;">
-      <button class="gallery-nav-btn prev-btn" onclick="scrollGallery(-1)" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
-      
-      <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-item rooms">
-          <img src="/assets/gallery-bedroom.jpg" alt="Master King Suite">
-          <div class="gallery-overlay"><div class="gallery-caption">Master Suite & Garden Sauna</div></div>
-        </div>
-        <div class="gallery-item pool">
-          <img src="/assets/gallery-pool-deck.jpg" alt="Private Pool Deck">
-          <div class="gallery-overlay"><div class="gallery-caption">Private Plunge Pool & Deck at Dusk</div></div>
-        </div>
-        <div class="gallery-item living">
-          <img src="/assets/gallery-living-room.jpg" alt="Living Lounge Bar">
-          <div class="gallery-overlay"><div class="gallery-caption">Open Lounge & Kitchen Bar</div></div>
-        </div>
-        <div class="gallery-item pool">
-          <img src="/assets/gallery-aerial-sunset.jpg" alt="Rice Field View">
-          <div class="gallery-overlay"><div class="gallery-caption">Rice Terrace Sunset View</div></div>
-        </div>
-        <div class="gallery-item living">
-          <img src="/assets/gallery-aerial-top.jpg" alt="Villa Aerial View">
-          <div class="gallery-overlay"><div class="gallery-caption">Nyaman Lima Twin Villa Aerial View</div></div>
-        </div>
-      </div>
-
-      <button class="gallery-nav-btn next-btn" onclick="scrollGallery(1)" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
   </section>
 
