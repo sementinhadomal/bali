@@ -1,0 +1,28 @@
+{
+  "name": "nyaman-lima-villas-bali",
+  "version": "1.0.0",
+  "description": "Landing Page de Luxo & Channel Manager Básico para Nyaman Lima Villas Bali",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "axios": "^1.7.2",
+    "node-ical": "^0.18.0",
+    "cookie-parser": "^1.4.6"
+  },
+  "keywords": [
+    "bali",
+    "villas",
+    "booking",
+    "airbnb",
+    "ical",
+    "channel-manager"
+  ],
+  "author": "Nyaman Lima Villas",
+  "license": "MIT"
+}
