@@ -211,3 +211,12 @@ function checkRoute() {
     }
   }
 }
+
+// 6. NAVEGAÇÃO DO CARROSSEL DE FOTOS (2 FOTOS LADO A LADO)
+window.scrollGallery = function(direction) {
+  const container = document.getElementById('galleryGrid');
+  if (container) {
+    const scrollAmount = (container.clientWidth / 2) * direction * 1.5;
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+};

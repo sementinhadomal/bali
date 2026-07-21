@@ -182,31 +182,37 @@
       <button class="tab-btn" data-filter="living" data-i18n="gallery_tab_living">Living & Dining</button>
     </div>
 
-    <div class="gallery-grid">
-      <div class="gallery-item pool">
-        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Private Pool">
-        <div class="gallery-overlay"><div class="gallery-caption">Private Infinity Pool</div></div>
+    <div class="gallery-slider-container" style="position: relative;">
+      <button class="gallery-nav-btn prev-btn" onclick="scrollGallery(-1)" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item pool">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Private Pool">
+          <div class="gallery-overlay"><div class="gallery-caption">Private Infinity Pool</div></div>
+        </div>
+        <div class="gallery-item rooms">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Master King Suite">
+          <div class="gallery-overlay"><div class="gallery-caption">Master Suite with Garden View</div></div>
+        </div>
+        <div class="gallery-item living">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" alt="Open Living Space">
+          <div class="gallery-overlay"><div class="gallery-caption">Open-Air Lounge & Dining</div></div>
+        </div>
+        <div class="gallery-item pool">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Tropical Garden">
+          <div class="gallery-overlay"><div class="gallery-caption">Tropical Garden Sanctuary</div></div>
+        </div>
+        <div class="gallery-item rooms">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Bathroom Spa">
+          <div class="gallery-overlay"><div class="gallery-caption">En-Suite Rainfall Bath</div></div>
+        </div>
+        <div class="gallery-item living">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Villa Exterior">
+          <div class="gallery-overlay"><div class="gallery-caption">Balinese Architectural Design</div></div>
+        </div>
       </div>
-      <div class="gallery-item rooms">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Master King Suite">
-        <div class="gallery-overlay"><div class="gallery-caption">Master Suite with Garden View</div></div>
-      </div>
-      <div class="gallery-item living">
-        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" alt="Open Living Space">
-        <div class="gallery-overlay"><div class="gallery-caption">Open-Air Lounge & Dining</div></div>
-      </div>
-      <div class="gallery-item pool">
-        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Tropical Garden">
-        <div class="gallery-overlay"><div class="gallery-caption">Tropical Garden Sanctuary</div></div>
-      </div>
-      <div class="gallery-item rooms">
-        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Bathroom Spa">
-        <div class="gallery-overlay"><div class="gallery-caption">En-Suite Rainfall Bath</div></div>
-      </div>
-      <div class="gallery-item living">
-        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Villa Exterior">
-        <div class="gallery-overlay"><div class="gallery-caption">Balinese Architectural Design</div></div>
-      </div>
+
+      <button class="gallery-nav-btn next-btn" onclick="scrollGallery(1)" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
   </section>
 
