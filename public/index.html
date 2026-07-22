@@ -23,7 +23,6 @@
   <!-- NAVBAR & HEADER -->
   <nav class="navbar">
     <a href="#" class="nav-brand">
-      <img src="/assets/logo.jpg" alt="Nyaman Lima Villas Bali" class="nav-logo">
       <div class="nav-title">
         NYAMAN LIMA
         <span>VILLAS • BALI</span>
@@ -39,7 +38,7 @@
       <li><a href="#instagram" data-i18n="nav_instagram">Instagram</a></li>
     </ul>
 
-    <div style="display: flex; align-items: center; gap: 14px;">
+    <div class="nav-actions">
       <!-- Seletor de Idiomas (8 Idiomas) -->
       <div class="lang-selector">
         <button class="lang-btn" id="langBtn">
@@ -59,19 +58,24 @@
       </div>
 
       <!-- CTA Principal Booking.com -->
-      <a href="https://www.booking.com/hotel/id/nyaman-lima-villas.pt-br.html" target="_blank" class="btn-gold btn-booking-trigger" data-source="Header CTA" data-i18n="nav_book_now">
+      <a href="https://www.booking.com/hotel/id/nyaman-lima-villas.pt-br.html" target="_blank" class="btn-gold btn-booking-trigger nav-booking-btn" data-source="Header CTA" data-i18n="nav_book_now">
         Book on Booking.com
       </a>
 
       <!-- Link Acesso Anfitrião (Admin) -->
-      <a href="/admin" class="btn-outline-gold" style="padding: 8px 14px; font-size: 13px;" data-i18n="nav_admin">
+      <a href="/admin" class="btn-outline-gold nav-admin-btn" data-i18n="nav_admin" title="Painel do Anfitrião">
         <i class="fa-solid fa-user-lock"></i>
       </a>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
   <section class="hero-section" id="overview">
+    <video autoplay loop muted playsinline class="hero-video-bg">
+      <source src="/assets/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+
     <div class="hero-content">
       <span class="hero-badge" data-i18n="hero_badge">NYAMAN LIMA VILLAS • BALI, INDONESIA</span>
       <h1 class="hero-title font-serif" data-i18n="hero_title">Your Private Luxury Sanctuary in Tropical Bali</h1>
