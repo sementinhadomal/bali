@@ -10,8 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
   setupBookingTracking();
   fetchCalendarEvents();
   setupGalleryFilters();
+  setupVideoAutoplay();
   checkRoute();
 });
+
+function setupVideoAutoplay() {
+  document.querySelectorAll('video').forEach(vid => {
+    vid.muted = true;
+    const playPromise = vid.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        const startVideo = () => { vid.play(); };
+        document.addEventListener('touchstart', startVideo, { once: true });
+        document.addEventListener('click', startVideo, { once: true });
+      });
+    }
+  });
+}
 
 // 1. GERENCIAMENTO DE IDIOMAS (8 Idiomas)
 function initLanguage() {

@@ -257,7 +257,7 @@ h1, h2, h3, h4, .font-serif {
   color: var(--gold-light);
 }
 
-/* HERO SECTION WITH VIDEO BACKGROUND */
+/* HERO SECTION WITH VIDEO (MOBILE) & STATIC PHOTO (DESKTOP) */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -266,20 +266,31 @@ h1, h2, h3, h4, .font-serif {
   justify-content: center;
   padding: 140px 20px 80px;
   overflow: hidden;
-  background: var(--bg-dark);
+  background: linear-gradient(to bottom, rgba(11, 19, 14, 0.4) 0%, rgba(11, 19, 14, 0.5) 60%, rgba(11, 19, 14, 0.98) 100%), 
+              url('/assets/gallery-aerial-top.jpg') center/cover no-repeat;
 }
 
 .hero-video-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: 0;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background: var(--bg-dark);
+  }
+  .hero-video-bg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+  }
 }
 
 .hero-video-overlay {
