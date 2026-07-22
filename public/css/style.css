@@ -271,22 +271,22 @@ h1, h2, h3, h4, .font-serif {
 }
 
 .hero-video-bg {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    background: var(--bg-dark);
+    background: var(--bg-dark) !important;
   }
   .hero-video-bg {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 100%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: 0;

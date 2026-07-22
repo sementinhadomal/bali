@@ -17,14 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupVideoAutoplay() {
   document.querySelectorAll('video').forEach(vid => {
     vid.muted = true;
-    const playPromise = vid.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        const startVideo = () => { vid.play(); };
-        document.addEventListener('touchstart', startVideo, { once: true });
-        document.addEventListener('click', startVideo, { once: true });
-      });
-    }
+    vid.defaultMuted = true;
+    vid.setAttribute('playsinline', '');
+    vid.setAttribute('webkit-playsinline', '');
+    
+    const tryPlay = () => {
+      vid.play().catch(() => {});
+    };
+    
+    tryPlay();
+    document.addEventListener('touchstart', tryPlay, { once: true });
+    document.addEventListener('scroll', tryPlay, { once: true });
+    document.addEventListener('click', tryPlay, { once: true });
   });
 }
 
